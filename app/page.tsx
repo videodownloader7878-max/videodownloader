@@ -1,6 +1,6 @@
 import Header from "@/components/SiteHeader";
 import HeroForm from "@/components/HeroForm";
-import Footer from "@/components/Footer";
+import Footer from "@/components/SiteFooter";
 import ArticlesSection from "@/components/ArticlesSection";
 import AdSlot from "@/components/AdSlot";
 import { tools } from "@/lib/tools";
