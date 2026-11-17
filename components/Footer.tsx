@@ -18,6 +18,7 @@ export default async function Footer() {
           <div><h4>Legal</h4><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/terms">Terms &amp; Conditions</a></li><li><a href="/copyright-policy">Copyright Policy</a></li><li><a href="/dmca">DMCA Policy</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div>
           <div><h4>Newsletter</h4><p>Get the latest updates and tech tips in your inbox.</p><NewsletterForm /></div>
         </div>
+        
         <div className="copy"><span>{h.copyright}</span><span>Made with ♥ for a better internet</span></div>
       </div>
     </footer>
