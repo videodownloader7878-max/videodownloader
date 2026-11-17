@@ -18,6 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
     verification: { google: s.gsc_verification || undefined, other: Object.keys(other).length ? other : undefined },
   };
 }
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const s = await getSetting("seo", SEO_DEFAULTS);
   const ga = /^G-[A-Z0-9]{4,14}$/.test(s.ga_id) ? s.ga_id : null;
