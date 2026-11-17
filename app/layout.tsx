@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const other: Record<string, string> = {};
   lines(s.other_verification).forEach((l) => { const i = l.indexOf("="); const k = l.slice(0, i).trim(), v = l.slice(i + 1).trim(); if (i > 0 && /^[\w:.-]{1,60}$/.test(k) && v && v.length < 200) other[k] = v; });
   return {
-    metadataBase, title: { default: s.site_title }, description: s.meta_description,
+    metadataBase, title: { default: s.site_title, template: "%s" }, description: s.meta_description,
     robots: s.robots_noindex ? { index: false, follow: false } : undefined,
     openGraph: { title: s.social_title || s.site_title, description: s.social_description || s.meta_description, images: s.default_og_image ? [s.default_og_image] : undefined },
     verification: { google: s.gsc_verification || undefined, other: Object.keys(other).length ? other : undefined },
