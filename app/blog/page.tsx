@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/SiteHeader";
-import Footer from "@/components/Footer";
+import Footer from "@/components/SiteFooter";
 import { getSupabase } from "@/lib/supabase";
 export const metadata = { title: "Blog – MediaAura", description: "Tips, guides and news about video downloading and online tools." };
 const PER = 9;
