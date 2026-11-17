@@ -1,5 +1,5 @@
 import Header from "@/components/SiteHeader";
-import Footer from "@/components/Footer";
+import Footer from "@/components/SiteFooter";
 import ContactForm from "@/components/ContactForm";
 import { getSetting, GENERAL_DEFAULTS } from "@/lib/settings";
 export const revalidate = 60;
