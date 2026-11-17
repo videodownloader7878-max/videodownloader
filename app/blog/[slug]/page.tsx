@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import Header from "@/components/SiteHeader";
-import Footer from "@/components/Footer";
+import Footer from "@/components/SiteFooter";
 import { ViewTracker } from "@/components/Tracker";
 import { getSupabase } from "@/lib/supabase";
 import { clean } from "@/lib/sanitize";
