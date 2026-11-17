@@ -57,7 +57,7 @@ export default async function Slug({ params }: { params: { slug: string } }) {
     return (<><Header /><main className="wrap toolpage"><h1>{name}</h1><p className="lead">{desc}</p>
       {isMp3 ? <Mp3Converter /> : <ToolClient slug={t.tool.slug} platform={adapters[t.tool.slug].platform} />}
       <AdSlot placement="tool_page" />
-      {t.row?.page_content?.split(/\n{2,}/).map((p: string, i: number) => <p key={i} style={{ color: "var(--mut)", fontSize: 14 }}>{p}</p>)}
+     .map((p, i) => ko .map((p: string, i: number) => <p key={i} style={{ color: "var(--mut)", fontSize: 14 }}>{p}</p>)}
     </main><Footer /></>);
   }
   const p = await loadPage(params.slug);
